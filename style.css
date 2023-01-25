@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -31,13 +31,6 @@ h3 {
   font-weight: 700;
   font-size: 22px;
 }
-button {
-  font-size: 17px;
-  font-weight: 700;
-}
-button i {
-  color: #0065FC;
-}
 h4 {
   font-size: 18px;
   font-weight: 700;
@@ -46,9 +39,8 @@ h4 {
   font-weight: 700;
   font-size: 16px;
 }
-li {
-  font-weight: 400;
-  font-size: 16px;
+ul {
+  list-style: none;
 }
 /* NAVBAR */
 .booki {
@@ -105,7 +97,7 @@ h2 {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.searchbox input{
+.searchbox input {
   background-color: #ffffff;
   width: 332px;
   height: 49px;
@@ -123,9 +115,9 @@ h2 {
   height: 49px;
   left: 341px;
   top: 200px;
-  background-color: #0065FC;
+  background-color: #0065fc;
   border-style: solid;
-  border-color: #0065FC;
+  border-color: #0065fc;
   border-radius: 0px 15px 15px 0px;
   font-weight: 700;
   font-size: 18px;
@@ -136,48 +128,81 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
+  padding-top: 46px;
+  padding-bottom: 54px;
 }
 .filters ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  list-style: none;
 }
 .filters li {
-  font-family: 'Raleway';
   font-size: 17px;
   font-weight: 700;
   padding: 10px;
-  border-style: solid;
+  border: 2px solid #d9d9d9;
   border-radius: 25px;
-  border-width: 2px;
-  border-color: #d9d9d9;
 }
 .filters i {
-color: #0065FC;
+  color: #0065fc;
 }
 .filters #filter_1 {
- padding-right: 87px;
+  padding-right: 87px;
 }
 .filters #filter_2 {
   padding-right: 80px;
- }
+}
 .filters #filter_3 {
   padding-right: 76px;
- }
+}
+/* INFO */
+.infobar i {
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  color: #0065fc;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+}
 /* CARDS */
-
+.cards {
+  width: 880px;
+  height: 626px;
+  background-color: #f2f2f2;
+  border: 20px solid #f2f2f2;
+  border-radius: 20px;
+}
+.more {
+  text-align: left;
+}
+.cards #cards1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+.cards p {
+  text-align: left;
+}
 .card {
-  border: 5px #ffffff;
-  border-radius: 20px 20px 0px 0px;
+  width: 246px;
+  height: 199px;
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.cards i {
+  color: #0065fc;
 }
 .card img {
+  object-fit: cover;
   width: 246px;
   height: 124px;
-}
-.card2 img {
-  width: 137px;
-  height: 144px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
