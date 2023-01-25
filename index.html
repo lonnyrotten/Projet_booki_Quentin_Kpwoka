@@ -49,21 +49,23 @@
     </article>
     <article>
         <div class="filters">
-            <div>
+            <div id="filters_title">
     <p>Filtres</p>
         </div>
-        <div class="filter_button">
-    <button><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-</div>
-<div class="filter_button">
-    <button><i class="fa-solid fa-person"></i> Familial</button>
-</div>
-<div class="filter_button">
-    <button><i class="fa-solid fa-heart"></i> Romantique</button>
-</div>
-    <div class="filter_button">
-    <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+        <ul>
+        <div id="filter_1">
+    <li><i class="fa-solid fa-money-bill-wave"></i> Économique</li>
         </div>
+        <div id="filter_2">
+    <li><i class="fa-solid fa-person"></i> Familial</li>
+        </div>
+        <div id="filter_3">
+    <li><i class="fa-solid fa-heart"></i> Romantique</li>
+        </div>
+        <div id="filter_4">
+    <li><i class="fa-solid fa-dog"></i> Animaux autorisés</li>
+        </div>
+    </ul>
         </div>
     </article>
     <article>
@@ -73,15 +75,15 @@
     </article>
     <article>
         <div class="cards">
+        <div id="cards1">
         <div>
         <h3>Hébergements à Marseille</h3>
         </div>
-        <div>
-            <figure>
+        <div class="card">
             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre de l'Auberge La Canebière">
-            <figcaption>
+            <p>
                 <div class="card_caption">
-                    <strong>Auberge La Canebière</strong>
+                    Auberge La Canebière
                 </div>
                 <div>
                     Nuit à partir de 25€
@@ -101,15 +103,13 @@
                                 <span>
                                     <i class="fa-duotone fa-star"></i>
                                 </span>
-                            </figcaption>
-        </figure>
+                            </p>
         </div>
-        <div>
-            <figure>
+        <div class="card">
             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre de l'Hôtel du port">
-            <figcaption>
+            <p>
                 <div class="card_caption">
-                    <strong>Hôtel du port</strong>
+                    Hôtel du port
                 </div>
                 <div>
                     Nuit à partir de 52€
@@ -129,15 +129,13 @@
                                 <span>
                                     <i class="fa-duotone fa-star"></i>
                                 </span>
-                            </figcaption>
-        </figure>
+            </p>
         </div>
-        <div>
-            <figure>
+        <div class="card">
             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre de l'Hôtel Les mouettes">
-            <figcaption>
+            <p>
                 <div class="card_caption">
-                    <strong>Hôtel Les mouettes</strong>
+                    Hôtel Les mouettes
                 </div>
                 <div>
                     Nuit à partir de 76€
@@ -157,15 +155,13 @@
                                 <span>
                                     <i class="fa-duotone fa-star"></i>
                                 </span>
-                            </figcaption>
-        </figure>
+                            </p>
         </div>
-        <div>
-            <figure>
+        <div class="card">
             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre de l'Hôtel de la mer">
-            <figcaption>
+            <p>
                 <div class="card_caption">
-                    <strong>Hôtel de la mer</strong>
+                    Hôtel de la mer
                 </div>
                 <div>
                     Nuit à partir de 46€
@@ -185,13 +181,11 @@
                         <span>
                             <i class="fa-duotone fa-star"></i>
                         </span>
-                    </figcaption>
-        </figure>
+                    </p>
         </div>
-        <div>
-            <figure>
+        <div class="card">
             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre de l'Auberge Le Panier">
-            <figcaption>
+            <p>
                 <div class="card_caption">
                 <strong>Auberge Le Panier</strong>
             </div>
@@ -213,13 +207,11 @@
                                 <span>
                                     <i class="fa-duotone fa-star"></i>
                                 </span>
-                            </figcaption>
-        </figure>
+                            </p>
         </div>
-        <div>
-            <figure>
+        <div class="card">
             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre de l'Auberge Chez Amina">
-            <figcaption>
+            <p>
                 <div class="card_caption">
                 <strong>Auberge Chez Amina</strong>
             </div>
@@ -241,21 +233,21 @@
                     <span>
                         <i class="fa-duotone fa-star"></i>
                 </span>
-            </figcaption>
-        </figure>
+            </p>
         </div>
     </div>
     </article>
     <article>
-        <div class="cards">
+        <div id="cards2">
         <div>
             <h3>Les plus populaires</h3>
         </div>
-        <div><i class="fa-solid fa-chart-line"></i></div>
         <div>
-            <figure>
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="card2">
             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre de l'Hôtel le soleil du matin">
-            <figcaption>
+            <p>
                 <div class="card_caption">
                 <strong>Hôtel le soleil du matin</strong>
             </div>
@@ -277,13 +269,11 @@
                 <span>
                     <i class="fa-duotone fa-star"></i>
             </span>
-            </figcaption>
-        </figure>
+        </p>
         </div>
-        <div>
-            <figure>
+        <div class="card2">
             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes Au coeur de l'eau">
-            <figcaption>
+            <p>
                 <div class="card_caption">
                 <strong>Chambres d'hôtes Au coeur de l'eau</strong>
             </div>
@@ -303,13 +293,11 @@
                 <span>
                     <i class="fa-duotone fa-star"></i>
             </span>
-            </figcaption>
-        </figure>
+        </p>
         </div>
-        <div>
-            <figure>
+        <div class="card2">
             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre de l'Hotêl Bleu et Blanc">
-            <figcaption>
+            <p>
                 <div class="card_caption">
                 <strong>Hotêl Bleu et Blanc</strong>
             </div>
@@ -331,8 +319,7 @@
                     <span>
                         <i class="fa-duotone fa-star"></i>
             </span>
-            </figcaption>
-        </figure>
+        </p>
         </div>
     </div>
     </article>
@@ -376,6 +363,7 @@
             </figcaption>
         </figure>
         </div>
+    </div>
     </article>
         </main>
     <footer>

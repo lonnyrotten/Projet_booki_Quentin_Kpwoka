@@ -90,7 +90,6 @@ h2 {
   padding-left: 5px;
   width: 332px;
   height: 49px;
-  border-radius: 15px;
   align-items: center;
 }
 .button i {
@@ -101,6 +100,8 @@ h2 {
   padding-left: 18px;
   padding-right: 18px;
   background-color: #f2f2f2;
+  border-style: solid;
+  border-color: #f2f2f2;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -111,10 +112,11 @@ h2 {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 17px;
-  padding-right: 88px;
-  line-height: 21.13px;
   font-weight: 700;
-  border: 1px solid #f2f2f2;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-color: #f2f2f2;
 }
 .searchbutton input {
   width: 132px;
@@ -122,6 +124,8 @@ h2 {
   left: 341px;
   top: 200px;
   background-color: #0065FC;
+  border-style: solid;
+  border-color: #0065FC;
   border-radius: 0px 15px 15px 0px;
   font-weight: 700;
   font-size: 18px;
@@ -131,15 +135,49 @@ h2 {
 .filters {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
 }
-button {
-  background-color: #ffffff;
-  padding-top: 14px;
-  padding-bottom: 16px;
-  border-radius: 15px;
+.filters ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
 }
-button i {
-  padding-right: 10 px;
+.filters li {
+  font-family: 'Raleway';
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 2px;
+  border-color: #d9d9d9;
+}
+.filters i {
+color: #0065FC;
+}
+.filters #filter_1 {
+ padding-right: 87px;
+}
+.filters #filter_2 {
+  padding-right: 80px;
+ }
+.filters #filter_3 {
+  padding-right: 76px;
+ }
+/* CARDS */
+
+.card {
+  border: 5px #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+.card img {
+  width: 246px;
+  height: 124px;
+}
+.card2 img {
+  width: 137px;
+  height: 144px;
 }
