@@ -4,23 +4,29 @@
   <meta charset="utf-8">
   <title>Booki</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/cdb14ce344.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/cdb14ce344.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav>
-    <a href="#"><img src="images/logo/Booki.png" alt="logo"></a>
-</nav>
+        <div class="container">
+            <div id="item1">
+    <a href="#"><img src="images/logo/Booki.png" class="booki" alt="logo"></a>
+</div>
 <nav>
+    <div id="item2">
     <a href="#"> Hébergements</a>
+    </div>
+    <div id="item3">
     <a href="#"> Activités</a>
+    </div>
 </nav>
+        </div>
     </header>
     <main>
         <article>
         <div>
-<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         </div>
     </article>
     <article>
@@ -29,35 +35,44 @@
         </div>
     </article>
     <article>
-        <div>
+        <div class="searchbar">
+            <div class="button">
             <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="searchbox">
             <input placeholder="Marseille, France" type="search" id="searchbar">
+            </div>
+            <div class="searchbutton">
             <input type="submit" value="Rechercher">
+            </div>
         </div>
     </article>
     <article>
-        <div>
-    <p><strong>Filtres</strong></p>
+        <div class="filters">
+            <div>
+    <p>Filtres</p>
         </div>
-        <div>
+        <div class="filter_button">
     <button><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
 </div>
-<div>
+<div class="filter_button">
     <button><i class="fa-solid fa-person"></i> Familial</button>
 </div>
-<div>
+<div class="filter_button">
     <button><i class="fa-solid fa-heart"></i> Romantique</button>
 </div>
-    <div>
+    <div class="filter_button">
     <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+        </div>
         </div>
     </article>
     <article>
-        <div>
+        <div class="info">
         <p><i class="fa-solid fa-info"></i> Plus de 500 logements disponibles dans cette ville</p>
     </div>
     </article>
     <article>
+        <div class="cards">
         <div>
         <h3>Hébergements à Marseille</h3>
         </div>
@@ -65,7 +80,7 @@
             <figure>
             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre de l'Auberge La Canebière">
             <figcaption>
-                <div>
+                <div class="card_caption">
                     <strong>Auberge La Canebière</strong>
                 </div>
                 <div>
@@ -93,7 +108,7 @@
             <figure>
             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre de l'Hôtel du port">
             <figcaption>
-                <div>
+                <div class="card_caption">
                     <strong>Hôtel du port</strong>
                 </div>
                 <div>
@@ -121,7 +136,7 @@
             <figure>
             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre de l'Hôtel Les mouettes">
             <figcaption>
-                <div>
+                <div class="card_caption">
                     <strong>Hôtel Les mouettes</strong>
                 </div>
                 <div>
@@ -149,7 +164,7 @@
             <figure>
             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre de l'Hôtel de la mer">
             <figcaption>
-                <div>
+                <div class="card_caption">
                     <strong>Hôtel de la mer</strong>
                 </div>
                 <div>
@@ -177,7 +192,7 @@
             <figure>
             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre de l'Auberge Le Panier">
             <figcaption>
-                <div>
+                <div class="card_caption">
                 <strong>Auberge Le Panier</strong>
             </div>
                 <div>
@@ -205,7 +220,7 @@
             <figure>
             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre de l'Auberge Chez Amina">
             <figcaption>
-                <div>
+                <div class="card_caption">
                 <strong>Auberge Chez Amina</strong>
             </div>
                 <div>
@@ -229,15 +244,19 @@
             </figcaption>
         </figure>
         </div>
+    </div>
     </article>
     <article>
-        <div><h3>Les plus populaires</h3></div>
+        <div class="cards">
+        <div>
+            <h3>Les plus populaires</h3>
+        </div>
         <div><i class="fa-solid fa-chart-line"></i></div>
         <div>
             <figure>
             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre de l'Hôtel le soleil du matin">
             <figcaption>
-                <div>
+                <div class="card_caption">
                 <strong>Hôtel le soleil du matin</strong>
             </div>
                 <div>
@@ -265,7 +284,7 @@
             <figure>
             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes Au coeur de l'eau">
             <figcaption>
-                <div>
+                <div class="card_caption">
                 <strong>Chambres d'hôtes Au coeur de l'eau</strong>
             </div>
                 <div>
@@ -291,7 +310,7 @@
             <figure>
             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre de l'Hotêl Bleu et Blanc">
             <figcaption>
-                <div>
+                <div class="card_caption">
                 <strong>Hotêl Bleu et Blanc</strong>
             </div>
                 <div>
@@ -315,29 +334,46 @@
             </figcaption>
         </figure>
         </div>
+    </div>
     </article>
     <article>
         <div><h3>Activités à Marseille</h3></div>
         <div>
             <figure>
             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
-            <figcaption><div><strong>Vieux-Port</strong></div></figcaption>
+            <figcaption>
+                <div class="card_caption">
+                <strong>Vieux-Port</strong>
+            </div>
+        </figcaption>
         </figure>
         </div>
         <div>
             <figure>
             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-            <figcaption><div><strong>Fort de Pomègues</strong></div></figcaption>
+            <figcaption>
+                <div class="card_caption">
+                    <strong>Fort de Pomègues</strong>
+                </div>
+            </figcaption>
         </figure>
         </div>
         <div>
             <figure>
             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
-            <figcaption><div><strong>Parc national des Calanques</strong></div></figcaption>
+            <figcaption>
+                <div class="card_caption">
+                    <strong>Parc national des Calanques</strong>
+                </div>
+            </figcaption>
         </figure>
         <figure>
             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
-            <figcaption><div><strong>Notre-Dame-de-la-Garde</strong></div></figcaption>
+            <figcaption>
+                <div class="card_caption">
+                    <strong>Notre-Dame-de-la-Garde</strong>
+                </div>
+            </figcaption>
         </figure>
         </div>
     </article>
