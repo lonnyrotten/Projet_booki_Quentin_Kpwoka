@@ -169,13 +169,23 @@
     margin-left: 50px;
     margin-bottom: 60px;
   }
-  /* HEBERGEMENTS */
-  .hebergements {
+  img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+  }
+  /* SECTION */
+  section {
     background-color: #F2F2F2;
-    width: 880px;
-    height: 626px;
     border: 10px solid #F2F2F2;
     border-radius: 20px;
+  }
+  .hotel_images {
+    border: 5px solid #FFFFFF;
+  }
+  /* HEBERGEMENTS */
+  .hebergements {
+    width: 880px;
+    height: 626px;
     padding-left: 40px;
   }
   .hebergements h4 {
@@ -203,9 +213,6 @@
   }
   .card img {
     height: 114px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
   }
   .card_info {
     display: flex;
@@ -219,9 +226,6 @@
   .popular {
     width: 420px;
     height: 625px;
-    background-color: #F2F2F2;
-    border: 10px solid #F2F2F2;
-    border-radius: 20px;
   }
   .popular_cards {
     display: flex;
@@ -267,9 +271,7 @@
   .popular_card img {
     width: 137px;
     height: 134px;
-    border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
-    object-fit: cover;
   }
   /* ACTIVITES */
   .activites {
@@ -294,9 +296,7 @@
   .activites img {
     width: 302px;
     height: 389px;
-    object-fit: cover;
     border: 1px solid white;
-    border-radius: 20px 20px 0px 0px;
   }
   .activites_card_info {
     padding-top: 20px;
@@ -380,6 +380,7 @@
     header {
       margin: 21px 65px 0px 33px;
       width: 298px;
+      gap: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
