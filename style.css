@@ -70,12 +70,6 @@
     gap: 67px;
     display: flex;
   }
-  .anchor_hebergements {
-    width: 113px;
-  }
-  .anchor_activites {
-    width: 67px;
-  }
   nav a span {
     padding-top: 44px;
     border-top: 2px solid transparent;
@@ -96,7 +90,7 @@
     height: 49px;
     display: flex;
   }
-  .searchbar i {
+  .fa-location-dot {
     color: black;
     background-color: #f2f2f2;
     border: 1px solid #F2F2F2;
@@ -118,6 +112,9 @@
     border-radius: 0px 15px 15px 0px;
     padding: 14px 14px 16px 16px;
     color: white;
+  }
+  .fa-magnifying-glass {
+    color: transparent;
   }
   /* FILTERBAR */
   .filterbar {
@@ -349,6 +346,7 @@
     display: flex;
     flex-direction: column;
   }
+  /* MEDIA QUERIES */
   @media only screen and (min-width:768px) and (max-width:992px) {
     body {
       width: 100%;
@@ -433,9 +431,35 @@
       flex-direction: column;
       align-items: center;
     }
+    nav {
+      gap: 91px;
+      margin-left: 33px;
+    }
+    nav a {
+      width: auto;
+    }
+    nav a span {
+      padding-top: 48px;
+      padding-bottom: 23.09px;
+      border-top: 0;
+      border-bottom: 2px solid #F2F2F2;
+      padding-left: 24.5px;
+      padding-right: 24.5px;
+    }
+    nav a span:hover {
+      border-top: 0;
+      border-bottom: 2px solid #0065FC;
+      color: #0065FC;
+    }
     .top_container {
       margin: 31px 57px 34px 20px;
       width: 298px;
+    }
+    .rechercher {
+      display: none;
+    }
+    .fa-magnifying-glass {
+      color: #FFFFFF;
     }
     .filterbar {
       width: auto;
@@ -462,6 +486,12 @@
       height: 50px;
       font-size: 11px;
       font-weight: bold;
+    }
+    li span {
+      gap: 5px;
+    }
+    .filter_1 {
+      gap: 8.56px;
     }
     .infobar {
       width: auto;
@@ -504,10 +534,7 @@
       flex-direction: column;
     }
     .more {
-      color: transparent;
-      height: 0;
-      margin: 0;
-      padding: 0;
+    display: none;
     }
     .activites {
       margin: 0;
