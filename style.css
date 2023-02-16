@@ -66,11 +66,24 @@
     justify-content: space-between;
   }
   nav {
+    margin-top: 2px;
     gap: 67px;
     display: flex;
   }
-  nav a:hover {
-    border: 2px solid #0065FC;
+  .anchor_hebergements {
+    width: 113px;
+  }
+  .anchor_activites {
+    width: 67px;
+  }
+  nav a span {
+    padding-top: 44px;
+    border-top: 2px solid transparent;
+    padding-left: 24.5px;
+    padding-right: 24.5px;
+  }
+  nav a span:hover {
+    border-top: 2px solid #0065FC;
     color: #0065FC;
   }
   /* MAIN-SEARCHBAR */
@@ -175,6 +188,9 @@
   }
   .booki {
     border-radius: 0;
+  }
+  .score_container i:last-of-type {
+    color: #F2F2F2;
   }
   /* SECTION */
   section {
@@ -291,7 +307,7 @@
     width: 302px;
     height: 445px;
     background-color: white;
-    border: 5px solid white;
+    border: 0;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -299,9 +315,13 @@
   .activites img {
     width: 302px;
     height: 389px;
-    border: 1px solid white;
   }
   .activites_card_info {
+    padding-top: 20px;
+    padding-left: 19px;
+    align-items: center;
+  }
+  .activites_card_info2 {
     padding-top: 20px;
     padding-left: 19px;
     align-items: center;
@@ -346,9 +366,17 @@
     }
     .card_title {
       display: flex;
-     
+    }
+    .popular .score_container {
+      padding: 0;
     }
     .popular h5 {
+      font-size: 14px;
+    }
+    .popular_card_info {
+      padding: 0;
+    }
+    .popular_card_info p:first-of-type {
       font-size: 14px;
     }
     .popular p {
@@ -358,10 +386,17 @@
       display: flex;
       flex-direction: row;
     }
+    .popular_card {
+      width: 252px;
+      height: 144px;
+    }
+    .popular_cards img {
+      width: 106px;
+    }
     .activites {
       width: 880px;
     }
-    .activites_card1 {
+    .activites_card {
       width: 182px;
       height: 267px;
     }
@@ -369,6 +404,16 @@
       width: 182px;
       height: 211px;
       object-fit: cover;
+    }
+    .activites_card_info {
+      padding-top: 20px;
+      padding-left: 19px;
+    }
+    .activites_card_info2 {
+      padding-top: 9px;
+    }
+    .notre-dame {
+      width: 125px;
     }
     footer {
       width: 879.65px;
