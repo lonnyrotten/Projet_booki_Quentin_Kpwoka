@@ -272,7 +272,6 @@
     margin: auto;
   }
   .card_info_text {
-    gap: 0.5em;
     flex: 1;
   }
   .popular_card_info .score_container {
@@ -298,10 +297,11 @@
     display: flex;
     flex-direction: row;
     gap: 2.25em;
+    flex-wrap: wrap;
   }
   .activites_card {
-    width: auto;
-    height: 55vh;
+    width: 22.9%;
+    height: auto;
     background-color: white;
     border: 0;
     border-radius: 20px;
@@ -309,7 +309,7 @@
     transition: 0.3s;
   }
   .activites img {
-    width: 20.5vw;
+    width: 100%;
     height: 90%;
   }
   /* FOOTER */
@@ -337,4 +337,61 @@
     gap: 1em;
   }
   /* MEDIA QUERIES */
-  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 992px) {
+    nav {
+      width: 35%;
+    }
+    main ul {
+      width: 85%;
+    }
+    .infobar {
+      width: 47%;
+    }
+    .hebergements {
+      width: 95%;
+    }
+    .card {
+      width: 30.5%;
+      height: 30vh;
+    }
+    .card img {
+      width: 25vw;
+      height: 16.25vh;
+    }
+    .popular {
+      width: 95%;
+      height: 45vh;
+    }
+    .popular_cards {
+      flex-direction: row;
+    }
+    .popular_card {
+      width: 25.75vw;
+      height: 24.5vh;
+    }
+    .popular_card img {
+      width: 40%;
+      height: 93%;
+    }
+    .popular_card_info {
+      height: 20vh;
+    }
+    .card_info_text p {
+      margin-top: 0.5em;
+      font-size: 0.95em;
+    }
+    .activites_cards {
+      gap: 2em;
+    }
+    .activites_card {
+      width: 22.25%;
+      height: 45vh;
+    }
+    .activites img {
+      height: 80%;
+    }
+    .activites h5 {
+      margin-left: 1em;
+      width: 70%;
+    }
+  }
