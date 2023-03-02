@@ -340,15 +340,37 @@
     gap: 1em;
   }
   /* MEDIA QUERIES */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 992px) {
+  @media only screen and (min-width : 768px) and (max-width : 992px) {
+    h1, h4 {
+      font-size: 1.1em;
+    }
+    h2, .infobar p, h5, footer li {
+      font-size: 0.9em;
+    }
+    .searchbar input, h3, .searchbar span, .more {
+      font-size: 0.95em;
+    }
+    .hebergements p, .popular h5 {
+      font-size: 0.8em;
+    }
+    .popular p {
+      font-size: 0.75em;
+    }
+    .header img {
+      width: 3.5em;
+    }
     nav {
       width: 35%;
     }
     main ul {
       width: 85%;
+      padding-left: 0.5em;
+    }
+    .filterbar li {
+      font-size: 0.9em;
     }
     .infobar {
-      width: 47%;
+      width: 55%;
     }
     .hotels {
       flex-wrap: wrap;
@@ -358,56 +380,70 @@
     }
     .card {
       width: 30.5%;
-      height: 30vh;
+      height: 28vh;
     }
     .card img {
-      width: 25vw;
+      width: 24.25vw;
       height: 16.25vh;
     }
     .popular {
       width: 95%;
-      height: 45vh;
+      height: 36vh;
     }
     .popular_cards {
       flex-direction: row;
+      gap: 1.25em;
     }
     .popular_card {
       width: 25.75vw;
-      height: 24.5vh;
+      height: 20vh;
     }
     .popular_card img {
       width: 40%;
-      height: 93%;
+      height: 92%;
     }
     .popular_card_info {
-      height: 20vh;
+      height: 17vh;
     }
     .card_info_text p {
-      margin-top: 0.5em;
-      font-size: 0.95em;
+      margin-top: 0.25em;
+      font-size: 0.65em;
+    }
+    .score_container {
+      height: 1.5em;
+      font-size: 0.75em;
+    }
+    .card_title {
+      width: 97%;
     }
     .activites_cards {
       gap: 2em;
+      flex-wrap: nowrap;
     }
     .activites_card {
       width: 22.25%;
-      height: 45vh;
+      height: 35vh;
     }
     .activites img {
       height: 80%;
     }
     .activites h5 {
+      padding-top: 0.25em;
       margin-left: 1em;
       width: 70%;
     }
     .footer_container {
       width: 80%;
-      gap: 7em;
+      gap: 3.5em;
       padding-top: 2em;
       padding-bottom: 2em;
     }
+    footer ul {
+      width: 130%;
+      gap: 0.5em;
+    }
   }
-  @media only screen and (min-device-width: 0) and (max-device-width: 768px) {
+  @media only screen and (min-width: 0) and (max-width: 767px) {
     header {
       flex-direction: column;
       margin: 0;
@@ -461,7 +497,7 @@
       gap: 1em;
       padding: 0;
     }
-    .filterbar p {
+    .filterbar li {
       font-size: 0.7em;
     }
     .filterbar span {
@@ -535,6 +571,7 @@
     .activites_cards {
       flex-direction: column;
       height: 100%;
+      flex-wrap: nowrap;
     }
     .activites_card {
       width: 100%;
