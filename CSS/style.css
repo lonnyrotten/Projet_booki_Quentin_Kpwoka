@@ -40,15 +40,14 @@
   main ul {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    min-width: 60%;
     justify-content: space-between;
     padding-inline-start: 1em;
   }
   .infobar {
-    width: 33%;
+    min-width: 33%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     font-weight: normal;
     font-size: 1em;
@@ -183,15 +182,16 @@
     background-color: #DEEBFF;
   }
   .infobar span{
-    padding: 0.8em;
+    padding: 0.35em;
     height: auto;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     display: flex;
     align-items: center;
+    margin-right: 1vw;
   }
   .infobar i {
-    margin: auto;
+    padding: 0.5em 0.35em;
   }
   /* CARDS */
   img {
@@ -213,11 +213,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 1.5vw;
   }
   .card {
-    width: 30.5%;
-    height: 23vh;
+    min-width: 30.5%;
+    min-height: 25vh;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -226,23 +226,23 @@
     transition: 0.3s;
   }
   .card img {
-    width: 95%;
-    height: 60%;
+    min-width: 90%;
+    max-height: 9vw;
   }
   .card_info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 0.25em;
+    gap: 0.25vw;
     width: 90%;
-    height: 40%;
+    min-height: 40%;
     margin: auto;
   }
   /* POPULAIRES */
   .popular_cards {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.5vw;
     height: 100%;
   }
   .card_title {
@@ -281,7 +281,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 1em;
+    height: 1vw;
   }
   /* ACTIVITES */
   .activites h5 {
@@ -299,7 +299,7 @@
   .activites_cards {
     display: flex;
     flex-direction: row;
-    gap: 2.25em;
+    gap: 2.25vw;
     flex-wrap: wrap;
   }
   .activites_card {
@@ -379,12 +379,10 @@
       width: 95%;
     }
     .card {
-      width: 30.5%;
-      height: 28vh;
+      min-height: 20vh;
     }
     .card img {
-      width: 24.25vw;
-      height: 16.25vh;
+      max-height: 12.25vh;
     }
     .popular {
       width: 95%;
@@ -395,15 +393,15 @@
       gap: 1.25em;
     }
     .popular_card {
-      width: 25.75vw;
-      height: 20vh;
+      width: 26.5vw;
+      height: 15vh;
     }
     .popular_card img {
       width: 40%;
       height: 92%;
     }
     .popular_card_info {
-      height: 17vh;
+      height: 12vh;
     }
     .card_info_text p {
       margin-top: 0.25em;
@@ -444,10 +442,17 @@
     }
   }
   @media only screen and (min-width: 0) and (max-width: 767px) {
+    main {
+      margin: 0;
+      width: 95%;
+    }
     header {
       flex-direction: column;
       margin: 0;
       margin-top: 1em;
+    }
+    header img {
+      width: 4.75em;
     }
     .header_logo {
       width: 10%;
@@ -459,8 +464,8 @@
     }
     nav a span {
       padding-bottom: 1.5em;
-      padding-left: 1.75em;
-      padding-right: 4.9em;
+      padding-left: 13.75vw;
+      padding-right: 13.75vw;
       border-top: 0;
       border-bottom: 2px solid #F2F2F2;
     }
@@ -470,6 +475,10 @@
     }
     h1 {
       font-size: 1.75em;
+    }
+    .top_container {
+      margin: 5vw;
+      margin-top: 15vw;
     }
     form {
       height: 3.25em;
@@ -491,24 +500,29 @@
       align-self: flex-start;
     }
     main ul {
-      width: 100%;
+      width: 85vw;
       align-self: flex-start;;
       flex-wrap: wrap;
       gap: 1em;
       padding: 0;
+      margin: auto;
     }
     .filterbar li {
-      font-size: 0.7em;
+      font-size: 2.75vw;
     }
     .filterbar span {
-      width: 9em;
+      width: 12.5em;
+      padding: 2vw;
     }
     .filterbar i {
-      font-size: 1.15em;
+      font-size: 1.5em;
       padding: 0.25em;
+      padding-right: 0.25em;
     }
     .infobar {
-      width: 85%;
+      width: 90%;
+      margin: auto;
+      margin-top: 4vw;
     } 
     .hotels {
       flex-direction: column-reverse;
@@ -520,7 +534,9 @@
       border-radius: 0;
     }
     .popular_cards {
-      width: 100%;
+      width: 95%;
+      margin: auto;
+      gap: 5.5vw;
     }
     .popular_card {
       width: 100%;
@@ -540,38 +556,46 @@
       font-size: 1.1em;
     }
     .hebergements {
-      width: 100%;
+      width: 95%;
       background-color: white;
       border: 0;
       padding-left: 0;
+      margin: 5vw;
     }
     .hebergements_cards {
       flex-direction: column;
       width: 100%;
+      gap: 5.5vw;
     }
     .card {
       width: 100%;
       height: 34vh;
     }
     .card img {
-      width: 97%;
+      width: 97.5%;
+      max-height: 65%;
     }
     .card_info {
-      height: 30%;
+      min-height: 30%;
     }
     .more {
       display: none;
+    }
+    .activites {
+      width: 95%;
+      margin: 5vw;
     }
     .activites_title {
       width: 50%;
     }
     .activites_title h4 {
-      margin-bottom: 0;
+      margin-bottom: 5vw;
     }
     .activites_cards {
       flex-direction: column;
       height: 100%;
       flex-wrap: nowrap;
+      gap: 5.5vw;
     }
     .activites_card {
       width: 100%;
