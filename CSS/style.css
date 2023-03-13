@@ -25,7 +25,7 @@
     font-size: 1em;
   }
   form, input, button, h3, .more {
-    font-size: 1.125em;
+    font-size: calc(0.5vw + 0.65em);
   }
   main li {
     font-size: 1.063em;
@@ -45,4 +45,30 @@
   }
   header img {
     height: 1.5em;
+  }
+  /* PREMIERE PARTIE DU MAIN */
+  form {
+    display: flex;
+    max-width: 32%;
+  }
+  .searchbar i {
+    background-color: #F2F2F2;
+    padding: 1em 1.125em;
+    border-radius: 15px 0 0 15px;
+  }
+  input {
+    padding: 0.7em;
+    border: 1px solid #F2F2F2;
+  }
+  button span {
+    color: white;
+  }
+  form :last-of-type i {
+    display: none;
+  }
+  button {
+    background-color: #0065FC;
+    padding: 0.7em 1em;
+    border: 1px solid #0065FC;
+    border-radius: 0 15px 15px 0;
   }
