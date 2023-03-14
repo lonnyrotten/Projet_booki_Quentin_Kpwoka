@@ -71,7 +71,6 @@ nav a span:hover {
 header img {
   height: 1.75vw;
 }
-/* PREMIERE PARTIE DU MAIN */
 /* BARRE DE RECHERCHE */
 form {
   display: flex;
@@ -277,4 +276,154 @@ footer ul {
   display: flex;
   flex-direction: column;
   gap: 1vw;
+}
+/* MEDIA QUERIES */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+/* POLICES */
+h1, h4 {
+  font-size: 2.2vw;
+}
+h2, nav a, .infobar p, h5, footer li {
+  font-size: 1.75vw;
+}
+form, input, button, h3, .more {
+  font-size: 1.85vw;
+}
+main li {
+  font-size: 1.75vw;
+}
+.hotels p {
+  font-size: 1.35vw;
+}
+.score_container {
+  font-size: 1.65vw;
+  margin-top: 1vw;
+}
+/* HEADER */
+header {
+  width: 98%;
+}
+/* CARTES DES HOTELS */
+.hotels {
+  flex-direction: column;
+}
+.hebergements {
+  width: 91%;
+}
+.card {
+  max-width: 31.95%;
+  min-width: 31.75%;
+  height: 20.214vw;
+}
+.card img {
+  height: 60%;
+}
+.card_info {
+  padding: 0.286vw 1.5vw;
+}
+.popular {
+  width: 91%;
+}
+.popular_cards {
+  flex-direction: row;
+}
+.popular_card {
+  width: 27vw;
+  height: 15.25vw;
+}
+.popular_card img {
+  min-height: 14vw;
+  max-height: 14.75vw;
+}
+.activites_cards {
+  gap: 4.75vw;
+}
+.activites_card {
+  width: 21.17%;
+  height: 28.714vw;
+  padding: 0 0 1vw;
+}
+.activites img {
+  height: 22.786vw;
+}
+.activites h5 {
+  margin: 1.5vw;
+}
+/* FOOTER */
+.footer_container {
+  gap: 9.5vw;
+}
+}
+@media only screen and (min-width: 0) and (max-width: 768px) {
+body {
+  margin: 0;
+}
+/* POLICES */
+h1, h4 {
+  font-size: 6vw;
+}
+h2, nav a, .infobar p, h5, footer li {
+  font-size: 4.143vw;
+}
+form, input, button, h3, .more {
+  font-size: 4.5vw;
+}
+/* HEADER */
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: ;
+}
+.header_logo {
+  margin: auto;
+}
+header img {
+  height: 4.75vw;
+}
+nav {
+  width: 100%;
+}
+nav a {
+  width: 50%;
+}
+/* MAIN */
+.top_container {
+  margin: 5vw;
+}
+input {
+  padding: 0.25em 3em 0.25em 0.5em;
+}
+button span {
+  display: none;
+}
+form :last-of-type i {
+  padding: 0;
+  background-color: transparent;
+  color: #FFFF;
+  display: block;
+}
+/* CARTE DES HOTELS */
+.hotels {
+  flex-direction: column-reverse;
+}
+.popular_cards {
+  gap: 4vw;
+}
+.popular {
+  width: 91%;
+  border-radius: 0;
+  padding: 1em;
+}
+.popular_card {
+  height: 40.25vw;
+}
+.popular img {
+  min-height: 37.5vw;
+  max-height: 37.75vw;
+}
+.hebergements {
+  width: 91%;
+  background-color: #FFFF;
+}
 }
