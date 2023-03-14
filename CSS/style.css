@@ -2,6 +2,16 @@
 body {
   max-width: 1400px;
   font-family: "Raleway", sans-serif;
+  margin: 3.5vw 3.5vw 0;
+}
+.top_container {
+  margin-top: 3.5vw;
+}
+.searchbar {
+  margin-top: 1.5vw;
+}
+.activites {
+  margin-top: 5vw;
 }
 /* POLICES */
 a {
@@ -46,6 +56,18 @@ nav {
   justify-content: space-between;
   gap: 5em;
 }
+nav a {
+  width: 7vw;
+  text-align: center;
+}
+nav a span {
+  padding: 3.35vw 1.75vw;
+  border-top: 2px solid transparent;
+}
+nav a span:hover {
+  border-top: 2px solid #0065FC;
+  color: #0065FC;
+}
 header img {
   height: 1.75vw;
 }
@@ -78,6 +100,7 @@ button {
 /* FILTRES */
 .filterbar {
   display: flex;
+  margin-top: 1.3vw;
 }
 .filterbar ul {
   display: flex;
@@ -100,6 +123,7 @@ li span:hover {
 /* BARRE INFO */
 .infobar {
   display: flex;
+  margin-top: 1.5vw;
 }
 .infobar span {
   height: auto;
@@ -120,6 +144,7 @@ li span:hover {
   display: flex;
   gap: 3em;
   width: 100%;
+  margin-top: 2.7vw;
 }
 .hotels h4 {
   margin: 0 0 1.5em 0;
@@ -148,7 +173,8 @@ margin: 0;
 }
 .card {
   background-color: #FFFF;
-  width: 30.95%;
+  max-width: 30.95%;
+  min-width: 30.75%;
   height: 14.214vw;
   border-radius: 20px;
   display: flex;
@@ -239,6 +265,7 @@ margin: 0;
 /* FOOTER */
 footer {
   background-color: #F2F2F2;
+  margin-top: 4vw;
 }
 .footer_container {
   display: flex;
