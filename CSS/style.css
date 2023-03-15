@@ -368,12 +368,21 @@ h2, nav a, .infobar p, h5, footer li {
 form, input, button, h3, .more {
   font-size: 4.5vw;
 }
+main li {
+  font-size: 2.214vw;
+}
+.hotels p {
+  font-size: 3.5vw;
+}
+.score_container {
+  font-size: 3.65vw;
+  margin-top: 2vw;
+}
 /* HEADER */
 header {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: ;
 }
 .header_logo {
   margin: auto;
@@ -383,9 +392,18 @@ header img {
 }
 nav {
   width: 100%;
+  gap: 0;
 }
 nav a {
   width: 50%;
+  padding: 5vw;
+  border-bottom: 2px solid #F2F2F2;
+}
+nav a:hover {
+  border-bottom: 2px solid #0065FC;
+}
+nav a span:hover {
+  border-top: 0;
 }
 /* MAIN */
 .top_container {
@@ -403,6 +421,19 @@ form :last-of-type i {
   color: #FFFF;
   display: block;
 }
+.filterbar {
+  margin: 6vw;
+  flex-direction: column;
+}
+.filterbar ul {
+  padding-left: 0;
+  gap: 1.5em;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.infobar {
+  margin: 6vw;
+}
 /* CARTE DES HOTELS */
 .hotels {
   flex-direction: column-reverse;
@@ -411,9 +442,9 @@ form :last-of-type i {
   gap: 4vw;
 }
 .popular {
-  width: 91%;
+  width: 90%;
   border-radius: 0;
-  padding: 1em;
+  padding: 5vw;
 }
 .popular_card {
   height: 40.25vw;
@@ -422,8 +453,51 @@ form :last-of-type i {
   min-height: 37.5vw;
   max-height: 37.75vw;
 }
+.popular_card_info {
+  padding: 5vw 4vw;
+}
 .hebergements {
-  width: 91%;
+  width: 90%;
   background-color: #FFFF;
+  padding: 5vw;
+}
+.hebergements_cards {
+  flex-direction: column;
+  gap: 4vw;
+}
+.card {
+  max-width: 99.95%;
+  min-width: 99.75%;
+  height: 50.214vw;
+}
+.card_info {
+  padding: 2vw 4vw;
+  gap: 0.5vw;
+}
+.more {
+  display: none;
+}
+/* ACTIVITES A MARSEILLE */
+.activites {
+  padding: 5vw;
+}
+.activites_cards {
+  flex-direction: column;
+  gap: 4.5vw;
+}
+.activites_card {
+  width: 99.5%;
+  height: 50.214vw;
+}
+.activites img {
+  height: 70%;
+}
+.activites h5 {
+  margin: 4vw;
+}
+/* FOOTER */
+.footer_container {
+  flex-direction: column;
+padding: 10vw;
 }
 }
