@@ -2,16 +2,16 @@
 body {
   max-width: 1400px;
   font-family: "Raleway", sans-serif;
-  margin: 3.5vw 3.5vw 0;
+  margin-inline: auto;
 }
 .top_container {
-  margin-top: 3.5vw;
+  margin-top: 3.5em;
 }
 .searchbar {
-  margin-top: 1.5vw;
+  margin-top: 1.5em;
 }
 .activites {
-  margin-top: 5vw;
+  margin-top: 5em;
 }
 /* POLICES */
 a {
@@ -29,19 +29,19 @@ ul {
   list-style-type: none;
 }
 h1, h4 {
-  font-size: 1.57vw;
+  font-size: clamp(16px, 1.57vw, 22px);
 }
 h2, nav a, .infobar p, h5, footer li {
-  font-size: 1.143vw;
+  font-size: clamp(12px, 1.143vw, 16px);
 }
 form, input, button, h3, .more {
-  font-size: 1.296vw;
+  font-size: clamp(12px, 1.296vw, 18px);
 }
 main li {
-  font-size: 1.214vw;
+  font-size: clamp(9px, 1.214vw, 17px);
 }
 .hotels p {
-  font-size: 1vw;
+  font-size: clamp(12px, 1vw, 14px);
 }
 img {
  object-fit: cover;
@@ -57,7 +57,7 @@ nav {
   gap: 5em;
 }
 nav a {
-  width: 7vw;
+  width: clamp(6em, 7vw, 7em);
   text-align: center;
 }
 nav a span {
@@ -69,7 +69,7 @@ nav a span:hover {
   color: #0065FC;
 }
 header img {
-  height: 1.75vw;
+  height: clamp(1rem, 1.75vw, 1.5rem);
 }
 /* BARRE DE RECHERCHE */
 form {
@@ -99,7 +99,7 @@ button {
 /* FILTRES */
 .filterbar {
   display: flex;
-  margin-top: 1.3vw;
+  margin-top: 1.3em;
 }
 .filterbar ul {
   display: flex;
@@ -111,18 +111,18 @@ button {
 .filterbar i {
   margin: 0.25em;
 }
-li span {
+.filterbar li {
   border: 2px solid #D9D9D9;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 0.5em 1em 0.5em 0.5em;
 }
-li span:hover {
+.filterbar li:hover {
   background-color: #deebff;
 }
 /* BARRE INFO */
 .infobar {
   display: flex;
-  margin-top: 1.5vw;
+  margin-top: 1.5em;
 }
 .infobar span {
   height: auto;
@@ -143,7 +143,7 @@ li span:hover {
   display: flex;
   gap: 3em;
   width: 100%;
-  margin-top: 2.7vw;
+  margin-top: 2.7em;
 }
 .hotels h4 {
   margin: 0 0 1.5em 0;
@@ -168,13 +168,13 @@ margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2vw;
+  justify-content: space-between;
+  gap: 2em 0.75em;
 }
 .card {
   background-color: #FFFF;
   max-width: 30.95%;
   min-width: 30.75%;
-  height: 14.214vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -182,22 +182,22 @@ margin: 0;
 }
 .card img {
   object-fit: cover;
-  height: 60%;
+  height: clamp(5em, 9vw, 8em);
   border: 5px solid #FFFF;
   border-radius: 20px 20px 0 0;
 }
 .card_info {
   height: 35%;
-  padding: 0.286vw 1vw;
-  gap: 0.25vw;
+  padding: 2% 5% 6%;
+  gap: 0.25em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .score_container {
-  font-size: 1.15vw;
+  font-size: clamp(0.75em, 1vw, 0.95em);
   display: flex;
-  margin-top: 0.5vw;
+  margin-top: 0.5em;
 }
 .score_container i:last-of-type {
   color: #F2F2F2;
@@ -217,12 +217,11 @@ margin: 0;
 .popular_cards {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 2em;
 }
 .popular_card {
   display: flex;
   width: 100%;
-  height: 10.25vw;
   background-color: #FFFF;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -230,46 +229,44 @@ margin: 0;
 .popular img {
   min-width: 40%;
   max-width: 40%;
-  min-height: 9vw;
-  max-height: 9.75vw;
+  height: clamp(5em, 10vw, 9em);
   border: 5px solid #FFFF;
   border-radius: 20px 0 0 20px;
 }
 .popular_card_info {
   display: flex;
   flex-direction: column;
-  padding: 1vw 1vw 1.5vw;;
+  padding: 5%;
   justify-content: space-between;
 }
 /* ACTIVITES A MARSEILLE */
 .activites_cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.75vw;
+  justify-content: space-between;
 }
 .activites_card {
   width: 23.5%;
-  height: 31.714vw;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 .activites img {
-  height: 27.786vw;
+  height: clamp(10em, 31.786vw, 27em);
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 .activites h5 {
-  margin: 1vw;
+  margin: 5%;
 }
 /* FOOTER */
 footer {
   background-color: #F2F2F2;
-  margin-top: 4vw;
+  margin-top: 6em;
 }
 .footer_container {
   display: flex;
   padding: 3vw 4vw 3vw 4vw;
-  gap: 15.5vw;
+  gap: 19.5%;
 }
 footer ul {
   padding: 0;
@@ -279,6 +276,9 @@ footer ul {
 }
 /* MEDIA QUERIES */
 @media only screen and (min-width : 768px) and (max-width : 992px) {
+body {
+  margin: 3.5vw 3.5vw 0;
+}
 /* POLICES */
 h1, h4 {
   font-size: 2.2vw;
@@ -369,7 +369,8 @@ form, input, button, h3, .more {
   font-size: 4.5vw;
 }
 main li {
-  font-size: 2.214vw;
+  font-size: 3.214vw;
+  width: 11em;
 }
 .hotels p {
   font-size: 3.5vw;
@@ -383,6 +384,7 @@ header {
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-top: 5vw;
 }
 .header_logo {
   margin: auto;
@@ -396,7 +398,7 @@ nav {
 }
 nav a {
   width: 50%;
-  padding: 5vw;
+  padding: 10vw 0 5vw;
   border-bottom: 2px solid #F2F2F2;
 }
 nav a:hover {
@@ -407,7 +409,7 @@ nav a span:hover {
 }
 /* MAIN */
 .top_container {
-  margin: 5vw;
+  margin: 10vw 5vw 5vw;
 }
 input {
   padding: 0.25em 3em 0.25em 0.5em;
@@ -427,12 +429,18 @@ form :last-of-type i {
 }
 .filterbar ul {
   padding-left: 0;
-  gap: 1.5em;
-  width: 90%;
+  gap: 1em;
+  width: 100%;
   flex-wrap: wrap;
+}
+.filterbar i {
+  margin: 0.45em;
 }
 .infobar {
   margin: 6vw;
+}
+.infobar span {
+  height: fit-content;
 }
 /* CARTE DES HOTELS */
 .hotels {
@@ -450,7 +458,7 @@ form :last-of-type i {
   height: 40.25vw;
 }
 .popular img {
-  min-height: 37.5vw;
+  min-height: 35.5vw;
   max-height: 37.75vw;
 }
 .popular_card_info {
@@ -496,6 +504,9 @@ form :last-of-type i {
   margin: 4vw;
 }
 /* FOOTER */
+footer {
+  margin-top: 10vw;
+}
 .footer_container {
   flex-direction: column;
 padding: 10vw;
