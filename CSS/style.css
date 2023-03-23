@@ -313,13 +313,12 @@ header {
 .card {
   max-width: 31.95%;
   min-width: 31.75%;
-  height: 20.214vw;
 }
 .card img {
-  height: 60%;
+  height: 14vw;
 }
 .card_info {
-  padding: 0.286vw 1.5vw;
+  padding: 0.286vw 1.5vw 1.25vw;
 }
 .popular {
   width: 91%;
@@ -454,12 +453,8 @@ form :last-of-type i {
   border-radius: 0;
   padding: 5vw;
 }
-.popular_card {
-  height: 40.25vw;
-}
 .popular img {
-  min-height: 35.5vw;
-  max-height: 37.75vw;
+  height: 38.5vw;
 }
 .popular_card_info {
   padding: 5vw 4vw;
@@ -474,12 +469,13 @@ form :last-of-type i {
   gap: 4vw;
 }
 .card {
-  max-width: 99.95%;
   min-width: 99.75%;
-  height: 50.214vw;
+}
+.card img {
+  height: 30vw;
 }
 .card_info {
-  padding: 2vw 4vw;
+  padding: 2% 5% 5%;
   gap: 0.5vw;
 }
 .more {
